@@ -13,3 +13,6 @@
 
  *= require_tree .
  */
+
+datetime { font-weight: bold; }
+#one_billion_time { font-size: 2em; }

@@ -15,3 +15,16 @@
 //= require foundation
 //= require turbolinks
 //= require_tree .
+
+$(function(){
+  $(document).foundation(); 
+  var block = $('#one_billion_time');
+  var val = new Date(Date.parse(block.attr('datetime')));
+  var updateBlock = function() {
+    var text = threeB.DOTIW.distance_of_time_in_words(new Date(), val);
+    block.text(text);
+    return text;
+  };
+  updateBlock();
+  setInterval(updateBlock, 1000*60);
+});
