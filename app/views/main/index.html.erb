@@ -1,0 +1,5 @@
+<%= form_tag(main_index_path, method: "post") do %>
+  <%= label_tag(:id, "Billion second starting point") %>
+  <%= date_field_tag(:id, '', required: true ) %>
+  <%= submit_tag("Find out!") %>
+<% end %>

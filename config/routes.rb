@@ -4,6 +4,7 @@ Billionyear::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'main#index'
+  resources :main
   get ':controller(/:action(/:id))'
 
   # Example of regular route:
