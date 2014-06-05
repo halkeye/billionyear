@@ -34,6 +34,14 @@ end
 
 gem 'dotiw'
 gem 'foundation-rails'
+
+group :development do
+  gem 'guard'
+  gem 'guard-rails'
+  gem 'guard-bundler'
+  gem 'guard-livereload'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
