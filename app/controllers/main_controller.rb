@@ -3,7 +3,7 @@ class MainController < ApplicationController
 
   def index
   end
-  
+
   def create
     redirect_to main_path(params[:id])
   end

@@ -3,4 +3,6 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+require 'ci/reporter/rake/minitest'
+
 Billionyear::Application.load_tasks
